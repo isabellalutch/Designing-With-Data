@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Fashion Edit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>THE DAILY FASHION EDIT</h1>
+<p>YOUR WEATHER. YOUR WARDROBE.</p>
+</header>
+
+    <main>
+
+<section class="intro">
+    <p class="small-title">THE DAILY FORECAST</p>
+    <h2>What should I wear today?</h2>
+    <p>See below for outfit options, made for the
+        weather wherever you are.</p>
+</section>
+
+<section class="controls">
+
+<div>
+<label for="city">WHERE ARE YOU TODAY?</label>
+<select id="city">
+<option value="oakville">Oakville</option>
+<option value="toronto">Toronto</option>
+<option value="newyork">New York</option>
+<option value="london">London</option>
+<option value="paris">Paris</option>
+<option value="miami">Miami</option>
+</select>
+</div>
+
+<div>
+<label for="style">WHAT'S YOUR STYLE PREFERENCE?</label>
+<select id="style">
+<option value="casual">Casual</option>
+<option value="dressy">Dressy</option>
+</select>
+</div>
+
+<button id="outfitButton">CUSTOMIZE MY OUTFIT</button>
+
+</section>
+
+<section class="weather-section">
+
+<p class="small-title">CURRENT CONDITIONS</p>
+
+<h3 id="cityName">Oakville</h3>
+
+<p id="temperature">Loading weather...</p>
+
+<p id="weatherDescription"></p>
+
+</section>
+
+<section class="outfit-section">
+
+<div class="outfit-image">
+<img id="outfitPhoto"
+src="cold-casual.jpg"
+alt="Recommended outfit">
+</div>
+
+<div class="outfit-info">
+
+<p class="small-title">TODAY'S EDIT</p>
+
+<h2 id="outfitTitle">Your outfit is waiting...</h2>
+
+<p id="outfitDescription">
+Select your city and style to discover
+what to wear today.
+</p>
+
+<h3>THE LOOK</h3>
+
+<p id="outfitItems"></p>
+
+<button id="refreshButton">
+REFRESH WEATHER
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>THE DAILY FASHION EDIT</p>
+<p>Source: OpenMeteo</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
